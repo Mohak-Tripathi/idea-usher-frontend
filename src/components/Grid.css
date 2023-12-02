@@ -1,0 +1,79 @@
+ body{
+  box-sizing: border-box;
+  margin:0
+}
+
+ .grid-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  width: 98vw;
+  /* border: 2px solid red */
+} 
+
+.heading{
+  text-align: center;  
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1px;
+  border: 2px solid black;
+
+}
+
+
+.highlight {
+  background-color: red
+} 
+
+
+.box-black {
+  background-color: black;
+}
+
+.box-white {
+  background-color: white;
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+
+.box {
+
+  width: 4vw; /* Adjust the width based on your preference */
+  height: 4vw; /* Adjust the height proportionally */
+  padding: 2px;
+  border: gray 2px solid;
+}
+
+
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens if needed */
+  .box {
+    width: 8vw;
+    height: 8vw;
+  }
+  .heading{
+    font-size: small;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens if needed */
+ 
+  .heading{
+    font-size: medium;
+  }
+}
